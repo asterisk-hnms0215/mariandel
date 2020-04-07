@@ -1,0 +1,156 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    font-size: 16px;
+}
+
+a{
+    color: #AAAAAA;
+    text-decoration: underline;
+}
+a:hover{
+    color:#E87EA6;
+    text-decoration: underline;
+}
+
+#PageTopBtn {
+    position: fixed; /*ボタンの配置場所を固定*/
+    bottom: -10px; /*下からのボタンの配置場所を指定*/
+    right: 10px; /*右からのボタンの配置場所を指定*/
+}
+#PageTopBtn a {
+    display: block; /*配置の調整*/
+    text-decoration: none; /*文字の下線を消す*/
+    color: #fff; /*文字の色*/
+    background: #AAA; /*ボタンの背景色*/
+    text-align: center; /*文字を中央に配置*/
+    border-radius: 5%; /*ボタンの角を少し丸くする*/
+    outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+    text-decoration: none; 
+    background: #E87EA6; /*マウスオーバー時の背景色*/
+}
+
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+#PageTopBtn {
+    font-size: 13px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+    width: 100px; /*ボタンの幅*/
+    height: 70px; /*ボタンの高さ*/
+    padding: 24px 0; /*文字の配置場所の調整*/
+}
+}
+
+@media (max-width: 767px) {
+#PageTopBtn {
+    font-size: 10px;
+}
+#PageTopBtn a {
+    width: 70px;
+    height: 50px;
+    padding: 17px 0;
+}
+}
+/*header-----------------------------*/
+header{
+    background-color: #111;
+    background-size: cover;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 46px;
+}
+header p{
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+/*nav------------------------------*/
+nav{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+nav ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 767px) {
+    nav ul{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+        }
+    nav li{
+	vertical-align: middle;
+    }
+}
+/*main----------------------------*/
+main{
+    text-align: center;
+    margin-bottom: 64px;
+}
+@media (max-width: 767px) {
+    main img{
+         max-width:90%;
+        }
+}
+/*gallery----------------------------*/
+#f-gallery{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+#f-gallery h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+#f-gallery img{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 24px;
+}
+
+@media screen and[max-width: 767px]{
+    img{
+    max-width: 100%;
+    height: auto;
+}
+}
+#i-gallery h3{
+    font-size: 18px;
+}
+
+#f-gallery p{
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+/*footer-------------------------*/
+#tp{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
