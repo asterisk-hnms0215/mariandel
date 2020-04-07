@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MARIANDEL-ANIMATION-</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+        <link href="https://fonts.googleapis.com/css?family=Lato|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reboot.css">
+        <link rel="stylesheet" href="../css/a_style.css">
+</head>
+
+<body>
+<p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+   
+<header>
+        <h1>HANAMASA* PORTFOLIO SITE MARIANDEL</h1>
+        <p>-ANIMATION-</p>
+</header>
+      
+      
+<nav>
+        <ul>
+           <li><a href="../index.html">HOME</a></li>
+           <li><a href="../graphic/graphic.html">GRAPHIC</a></li>
+            <li><a href="../illustration/illustration.html">ILLUSTRATION </a></li>
+           <li><a href="../fanart/fanart.html">FAN ART</a></li> 
+       </ul>
+</nav>
+   
+    
+<main>
+      <img src="../img/main_animation18.png" alt="aメイン">
+   </main>
+    
+<div id="a-gallery">
+   <h2>ANIMATION GALLERY</h2>
+   
+    
+    
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2rwMPFZfFao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>『anima!』</h3>
+    <p>2017年<br>「自分を動物にたとえたら？」というお題で描いた<br>キャラクター同士をメタモルフォーゼさせたもの<br>アライグマ～コアラの作画を担当</p>
+    
+    <video src="../img/anime/yorunoyamianime2.mp4" width="560" height="315" controls></video>
+    <h3>『夜の闇』</h3>
+   <p>2018年<br>変ないきものをお題に制作したキャラクター</p>
+    
+    <video src="../img/anime/15g035_%E3%80%8C%E5%A4%A2-%E8%88%9E%E5%8F%B0-%E3%80%8D.mp4" width="560" height="315" controls></video>
+    <h3>『夢-舞台-』</h3>
+    <p>2016年</p>
+    
+   
+</div>
+ <!-- footer ---------------------------------->
+    
+    
+   <div id="tp">
+       <div id="t">
+            <a href="https://twitter.com/hanamasa_kk?lang=ja"><img src="../img/ticon.png" alt="twitter"></a>
+        </div>
+        
+        <div id="p">
+            <a href="https://www.pixiv.net/member.php?id=5581529"><img src="../img/picon.png" alt="pixiv"></a>
+        </div>
+    </div>
+    
+    <footer>
+       <p>&copy; 2019 Hanamasa</p>
+    </footer>
+    
+<script> 
+    $(function() {
+    var TopBtn = $('#PageTopBtn');    
+    TopBtn.hide();
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            TopBtn.fadeIn();
+        } 
+        else {
+            TopBtn.fadeOut();
+        }
+    });
+    
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
+</script>    
+    
+</body>
+</html>
