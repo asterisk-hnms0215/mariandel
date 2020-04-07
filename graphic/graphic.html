@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MARIANDEL-GRAPHIC-</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reboot.css">
+        <link rel="stylesheet" href="../css/g_style.css">
+</head>
+
+<body>
+    <p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+   
+<header>
+        <h1>HANAMASA* PORTFOLIO SITE MARIANDEL</h1>
+        <p>-GRAPHIC-</p>
+</header>
+      
+<nav>
+        <ul>
+           <li><a href="../index.html">HOME</a></li>
+           <li><a href="../illustration/illustration.html">ILLUSTRATION</a></li>
+            <li><a href="../animation/animation.html">ANIMATION</a></li>
+           <li><a href="../fanart/fanart.html">FAN ART</a></li>
+        </ul>
+</nav>
+     
+<main>
+          <img src="../img/main_graphic18.png" alt="gメイン">
+</main>
+      
+<div id="g-gallery">
+    <h2>GRAPHIC GALLERY</h2>
+
+        <img src="../img/gphot/gphot1.png" alt="gphot1">
+        <h3>『NO WAR』</h3>
+        <p>2017年<br>反戦ポスターを制作</p>
+        
+        <img src="../img/gphot/gphot2.png" alt="gphot2">
+        <h3>『花森安治 ポスター』</h3>
+        <p>2017年<br>津野海太郎によるブックトークの宣伝ポスター</p>
+        
+        <img src="../img/gphot/gphot3.png" alt="gphot3">
+        <h3>『Love Letter』</h3>
+        <p>2017年<br>映画「Love Letter」のビジュアルイメージポスター</p>
+        
+        <div id="calendar">
+              <img src="../img/gphot/gphot4.jpg" alt="gphot4">
+              <img src="../img/gphot/gphot4.5.jpg" alt="gphot4.5">
+        </div>
+        <h3>『Birthstone calender 2018 12jems』</h3>
+        <p>2017年<br>誕生石をテーマとした2018年度のカレンダー。<br>表紙デザイン、4・8・12月イラスト担当</p>
+        
+        <div id="color">
+              <img src="../img/gphot/gphot5.jpg" alt="gphot5">
+              <img src="../img/gphot/gphot5.5.jpg" alt="gphot5.5">
+        </div>
+        <h3>『植物から出来る 日本の伝統色』</h3>
+        <p>2017年<br>植物染色によりできる色に注目した図鑑。<br>紅色・前書き・目次・作者紹介・奥付を担当</p>
+        
+        <img src="../img/gphot/gphot6.jpg" alt="gphot6">
+        <h3>『mukogaoka yuen MAP』</h3>
+        <p>2017年<br>「カルスポ探検へようこそ」の向ヶ丘遊園駅周辺地図を担当</p>
+        
+        <img src="../img/gphot/gphot7.jpg" alt="gphot7">
+        <h3>『ポカリスエット雑誌広告』</h3>
+        <p>2017年<br>A3雑誌広告</p>
+        
+        <img src="../img/gphot/gphot9.jpg" alt="gphot9">
+        <h3>『PriMo』</h3>
+        <p>2018年<br>コミティア123にて頒布したイラスト本。<br>イラストを2枚寄稿・「PriMo」の表紙デザインを担当</p>
+        
+        <img src="../img/gphot/gphot10.jpg" alt="gphot10">
+        <h3>『ingenuity』</h3>
+        <p>2018年<br>イラスト本「ingenuity」の表紙</p>
+        
+        <img src="../img/gphot/gphot13.jpg" alt="gphot13">
+        <h3>『へんないきもの？展ポスター』</h3>
+        <p>2018年<br>展示用ポスター</p>
+        
+        <img src="../img/gphot/gphot8.jpg" alt="gphot8">
+        <h3>『LEIKA-パッケージ-』</h3>
+        <p>2018年<br>卒業制作・花の香水「LEIKA」のパッケージデザイン</p>
+    
+        <img src="../img/gphot/gphot12.jpg" alt="gphot12">
+        <h3>『LEIKA-ポスター-』</h3>
+        <p>2018年<br>卒業制作・花の香水「LEIKA」の宣伝ポスター</p>
+</div>
+      
+      
+<div id="tp">
+       <div id="t">
+            <a href="https://twitter.com/hanamasa_kk?lang=ja"><img src="../img/ticon.png" alt="twitter"></a>
+        </div>
+        
+        <div id="p">
+            <a href="https://www.pixiv.net/member.php?id=5581529"><img src="../img/picon.png" alt="pixiv"></a>
+        </div>
+</div>
+    <footer>
+       <p>&copy; 2019 Hanamasa</p>
+    </footer>
+    
+    
+    
+    <script>
+    $(function() {
+    var TopBtn = $('#PageTopBtn');
+    TopBtn.hide();
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            TopBtn.fadeIn();
+        }
+        else {
+            TopBtn.fadeOut();
+        }
+    });
+    
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
+</script>
+</body>
+</html>
