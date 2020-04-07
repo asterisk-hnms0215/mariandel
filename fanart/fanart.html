@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MARIANDEL-FAN ART-</title>
+<!--        <meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reboot.css">
+        <link rel="stylesheet" href="../css/f_style.css">
+</head>
+
+<body>
+    <p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+   
+<header>
+        <h1>HANAMASA* PORTFOLIO SITE MARIANDEL</h1>
+        <p>-FAN ART-</p>
+</header>
+      
+<nav>
+        <ul>
+           <li><a href="../index.html">HOME</a></li>
+           <li><a href="../graphic/graphic.html">GRAPHIC</a></li>
+           <li><a href="../illustration/illustration.html">ILLUSTRATION</a></li>
+           <li><a href="../animation/animation.html">ANIMATION</a></li>
+       </ul>
+</nav>
+    
+<main>
+     <img src="../img/main_fanart18.png" alt="メイン">
+</main>
+      
+<div id="f-gallery">
+    <h2>FAN ART GALLERY</h2>
+    
+    <img src="../img/fanphot/fphot1.jpg" alt="fphot1">
+    <h3>『新世代』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot2.jpg" alt="fphot2">
+    <h3>『HPB AKC!2018』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot3.jpg" alt="fphot3">
+    <h3>『イノベーター』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot4.jpg" alt="fphot4">
+    <h3>『約束の日2017』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot5.jpg" alt="fphot5">
+    <h3>『leader』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot6.jpg" alt="fphot6">
+    <h3>『言葉』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot7.jpg" alt="fphot7">
+    <h3>『皇帝』</h3>
+        <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot8.jpg" alt="fphot8">
+    <h3>『LA・JUSTICE』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot9.jpg" alt="fphot9">
+    <h3>『キャプテン』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot10.jpg" alt="fphot10">
+    <h3>『no title』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot11.jpg" alt="fphot11">
+    <h3>『crow』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot12.jpg" alt="fphot12">
+    <h3>『The Phantoms』</h3>
+    <p>2017年</p>
+        
+    <img src="../img/fanphot/fphot13.jpg" alt="fphot13">
+    <h3>『The Phantoms2』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot14.jpg" alt="fphot14">
+    <h3>『#01』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot15.jpg" alt="fphot15">
+    <h3>『Detective』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot16.jpg" alt="fphot16">
+    <h3>『二面』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot17.jpg" alt="fphot17">
+    <h3>『覚悟の証』</h3>
+    <p>2018年</p>
+        
+    <img src="../img/fanphot/fphot18.jpg" alt="fphot18">
+    <h3>『no title』</h3>
+    <p>2018年</p>
+</div>
+    
+    
+    
+<!-- footer--------------------------------->
+<div id="tp">
+       <div id="t">
+            <a href="https://twitter.com/hanamasa_kk?lang=ja"><img src="../img/ticon.png" alt="twitter"></a>
+        </div>
+        
+        <div id="p">
+            <a href="https://www.pixiv.net/member.php?id=5581529"><img src="../img/picon.png" alt="pixiv"></a>
+        </div>
+</div>
+    
+    <footer>
+       <p>&copy; 2019 Hanamasa</p>
+    </footer>
+    
+    
+    
+    <script> 
+    $(function() {
+    var TopBtn = $('#PageTopBtn');    
+    TopBtn.hide();
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            TopBtn.fadeIn();
+        } 
+        else {
+            TopBtn.fadeOut();
+        }
+    });
+    
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
+</script>
+</body>
+</html>
