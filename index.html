@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MARIANDEL</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="../portfolio18_15G035/css/reboot.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="keywords" content="華政,MARIANDEL">
+</head>
+
+<body>
+    <p id="PageTopBtn"><a href="#wrap">▲Page Top</a></p>
+  
+    <header>
+        <h1>HANAMASA* PORTFOLIO SITE MARIANDEL</h1>
+    </header>
+  
+  
+    <nav>
+        <ul>
+           <li><a href="../portfolio18_15G035/graphic/graphic.html">GRAPHIC</a></li>
+           <li><a href="../portfolio18_15G035/illustration/illustration.html">ILLUSTRATION</a></li>
+            <li><a href="../portfolio18_15G035/animation/animation.html">ANIMATION</a></li>
+           <li><a href="../portfolio18_15G035/fanart/fanart.html">FAN ART</a></li>
+       </ul>
+    </nav>
+    
+   <main>
+       <img src="../portfolio18_15G035/img/main18.png" alt="メイン">
+   </main>
+    
+    
+<!-- profile------------------------------  -->
+    
+    
+<div id="profile">
+       <h2>PROFILE</h2>
+       <img src="../portfolio18_15G035/img/myprofile.png" alt="myprofile">
+        <p>1997年生まれ。現在は『華政』の名で活動中。<br>
+        広告・パッケージデザイン、イラストを中心に制作。<br>
+       花や星やキラキラしたものがとても好き。<br>
+        素敵な美人を描けるようになりたい。</p>
+         
+         <div id="Exhibition">
+              <h3>EXHIBITION</h3>
+              <dl>
+                  <dt>2016年</dt>
+                  <dd>Time-Line展(和光大学 ホワイトギャラリー)</dd>
+
+                  <dt>2017年</dt>
+                  <dd>love letter展(和光大学 ホワイトギャラリー)</dd>
+                  <dd>めくるめく展(和光大学 梅根記念図書館)</dd>
+
+                  <dt>2018年</dt>
+                  <dd>へんないきもの？展(和光大学 ホワイトギャラリー)</dd>
+                  
+                  <dt>2019年</dt>
+                  <dd>卒業制作展カロル<br><a href="http://www.wako.ac.jp/artex/" >詳しくはこちら</a></dd>
+              </dl>
+        </div>
+</div>
+   
+    
+<!--works--------------------------------->
+
+<div id="works">
+    <h2>GALLERY</h2>
+      
+       <div id="works-container">
+           
+            <div id="worksgraphic">
+                <a href="../portfolio18_15G035/graphic/graphic.html"><img src="../portfolio18_15G035/img/graphic182.png" alt="grapgic182">
+                GRAPHIC>>></a>
+            </div>
+            
+            <div id="worksillustration">
+                <a href="../portfolio18_15G035/illustration/illustration.html"><img src="../portfolio18_15G035/img/illustration182.png" alt="illustration182">
+                ILLUSTRATION>>></a>
+            </div>
+           
+            <div id="worksanimation">
+                <a href="../portfolio18_15G035/animation/animation.html"><img src="../portfolio18_15G035/img/animation182.png" alt="animation182">
+                ANIMATION>>></a>
+            </div>
+                
+            <div id="worksfanart">
+                <a href="../portfolio18_15G035/fanart/fanart.html"><img src="../portfolio18_15G035/img/fanart182.png" alt="fanart182">
+                FAN ART>>></a>
+            </div>
+                
+        </div>
+</div>
+
+   
+<!--footer--------------------------------->  
+<div id="tp">
+       <div id="t">
+            <a href="https://twitter.com/hanamasa_kk?lang=ja"><img src="../portfolio18_15G035/img/ticon.png" alt="twitter"></a>
+        </div>
+        
+        <div id="p">
+            <a href="https://www.pixiv.net/member.php?id=5581529"><img src="../portfolio18_15G035/img/picon.png" alt="pixiv"></a>
+        </div>
+    </div>
+    
+<footer>
+<!--    <p>このサイトに記載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。</p>-->
+    <p>&copy; 2019 Hanamasa</p>
+</footer>
+    
+    
+    
+    <script> 
+    $(function() {
+    var TopBtn = $('#PageTopBtn');    
+    TopBtn.hide();
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            TopBtn.fadeIn();
+        } 
+        else {
+            TopBtn.fadeOut();
+        }
+    });
+    
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
+</script>
+</body>
+
+</html>
